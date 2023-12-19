@@ -1,0 +1,177 @@
+[
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/main.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/main.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/main.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/window/Game.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/window/Game.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/window/Game.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/window/Window.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/window/Window.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/window/Window.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/Log.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/Log.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/Log.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/Mesh.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/Mesh.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/Mesh.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/Time.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/Time.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/Time.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/Light.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/Light.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/Light.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/Object.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/Object.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/Object.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/Shader.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/Shader.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/Shader.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/Camera.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/Camera.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/Camera.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/Global.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/Global.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/Global.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/Screen.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/Screen.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/Screen.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/Engine.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/Engine.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/Engine.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/Texture.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/Texture.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/Texture.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/Material.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/Material.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/Material.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/ObjLoader.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/ObjLoader.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/ObjLoader.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/Resources.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/Resources.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/Resources.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/GameObject.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/GameObject.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/GameObject.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/FrameBuffer.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/FrameBuffer.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/FrameBuffer.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/Application.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/Application.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/Application.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/math/Matrix4x4.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/math/Matrix4x4.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/math/Matrix4x4.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/noise/SimplexNoise.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/noise/SimplexNoise.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/noise/SimplexNoise.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/component/MeshRender.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/component/MeshRender.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/component/MeshRender.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/ui/ImGuiRender.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/ui/ImGuiRender.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/ui/ImGuiRender.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/ui/main/Template.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/ui/main/Template.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/ui/main/Template.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/core/scene/SceneManager.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/core/scene/SceneManager.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/scene/SceneManager.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/core/scene/Scene.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/core/scene/Scene.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/scene/Scene.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/core/wavefront/Wavefront.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/core/wavefront/Wavefront.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/wavefront/Wavefront.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/ui/imgui/backends/imgui_impl_opengl3.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/ui/imgui/backends/imgui_impl_opengl3.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/ui/imgui/backends/imgui_impl_opengl3.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/ui/imgui/backends/imgui_impl_glfw.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/ui/imgui/backends/imgui_impl_glfw.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/ui/imgui/backends/imgui_impl_glfw.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/ui/imgui/imgui_widgets.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/ui/imgui/imgui_widgets.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/ui/imgui/imgui_widgets.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/ui/imgui/imgui_tables.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/ui/imgui/imgui_tables.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/ui/imgui/imgui_tables.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/ui/imgui/imgui_demo.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/ui/imgui/imgui_demo.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/ui/imgui/imgui_demo.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/ui/imgui/imgui_draw.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/ui/imgui/imgui_draw.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/ui/imgui/imgui_draw.cpp"
+},
+{
+  "directory": "/home/idealrender/Documentos/FandoraEngine3D/build",
+  "command": "/usr/bin/g++  -I/home/idealrender/Documentos/FandoraEngine3D/src/engine/core/stb -g -o CMakeFiles/GameRenderGR.dir/src/engine/ui/imgui/imgui.cpp.o -c /home/idealrender/Documentos/FandoraEngine3D/src/engine/ui/imgui/imgui.cpp",
+  "file": "/home/idealrender/Documentos/FandoraEngine3D/src/engine/ui/imgui/imgui.cpp"
+}
+]
