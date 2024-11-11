@@ -65,6 +65,6 @@
         "**/build": true
     },
     "cmake.configureOnOpen": true,
-    "cmake.sourceDirectory": "/home/idealrender/Documentos/FandoraEngine3D"
+    "cmake.sourceDirectory": "/home/grdev/Documentos/FandoraEngine3D"
     
 }

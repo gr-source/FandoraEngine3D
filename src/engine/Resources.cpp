@@ -12,18 +12,18 @@
 #include "core/wavefront/Wavefront.h"
 
 #define STB_IMAGE_IMPLEMENTATION
-#include <stb_image.h>
+#include "core/stb/stb_image.h"
 
 template <>
 Texture& Resources::Load<Texture>(const std::string& path) {
     if (!std::filesystem::exists(path)) {
-        throw new Exception("file not found: " + path);
+        throw std::runtime_error("file not found: " + path);
     }
 
     int width, height, nrChannels;
     stbi_uc *data = stbi_load(path.c_str(), &width, &height, &nrChannels, 0);
     if (!data) {
-        throw new Exception("stbi_load error");
+        throw std::runtime_error("stbi_load error");
     }
 
     GLuint textureID;
@@ -59,7 +59,8 @@ GameObject& Resources::Load<GameObject>(const std::string& path) {
     if (String.endWith(path, ".obj")) {
         wavefront = std::make_unique<Wavefront>(path);
     }
-
+    if (!wavefront)
+	throw std::runtime_error("FIX ME!");
     Object& object = wavefront->objects[0];
 
     GameObject* gameObject = new GameObject(object.name);

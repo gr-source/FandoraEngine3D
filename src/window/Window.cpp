@@ -53,9 +53,10 @@ void Window::Start() {
 
    // mShaderMap.emplace(ShaderType::DEFAULT, std::move(&Resources::Load<Shader>("default")));
    // mShaderMap.emplace(ShaderType::MESH,    std::move(&Resources::Load<Shader>("Mesh")));
-
+   
     game = std::make_unique<Game>();
     game->Start();
+    
     
     glEnable(GL_MULTISAMPLE);
     //glEnable(GL_DEPTH_TEST);
@@ -77,8 +78,9 @@ void Window::Start() {
 void Window::Update() {
     Time::Tick();
 
+    
     game->Update();
-
+    
     // Usar framebuffer personalizado
     mFrameBuffer->bind();
     glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
@@ -98,6 +100,8 @@ void Window::Update() {
     imGuiRender->Begin();
     game->Gui();
     imGuiRender->End();
+    /*
+    */
 
     glfwSwapBuffers(window);
     glfwPollEvents();

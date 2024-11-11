@@ -11,7 +11,7 @@ SceneManager::~SceneManager() {}
 
 void SceneManager::createScenes(const std::string& name) {
     std::unique_ptr<Scenes> scenes = std::make_unique<Scenes>(name);
-    scenes->add("Cube");
+     scenes->add("Cube");
 
     m_scenes.push_back(std::move(scenes)); //mover o original pra lista
 }
@@ -54,7 +54,13 @@ void SceneManager::loadFromFile(const std::string& path) {
 }
 
 void SceneManager::loadAllScenes() {
-    for (auto& it : std::filesystem::directory_iterator("src/assets/scenes")) {
+    auto path = "src/assets/scenes";
+    
+    if (!std::filesystem::exists(path)) {
+    	std::cout << "Scenes dir do not found: " << path << std::endl;    	
+		return;
+    }
+	for (auto& it : std::filesystem::directory_iterator(path)) {
         if (it.path().extension() != std::filesystem::path(".scn")) continue;
 
         loadFromFile(it.path().string());
@@ -70,9 +76,16 @@ void SceneManager::renamescene(const std::string& newName) {
 }
 
 void SceneManager::saveScenes() {
+    std::string path = "src/assets/scenes/";
+    
+    if (!std::filesystem::exists(path)) {
+    	std::cout << "Scenes dir do not found: " << path << std::endl;    	
+		return;
+    }
+    
     const auto& scene = m_scenes.back();
 
-    std::fstream file("src/assets/scenes/" + scene->name + ".scn", std::ios::out);
+    std::fstream file(path + scene->name + ".scn", std::ios::out);
     file << "name" << " " << scene->name << std::endl;
 
     for (const auto& gameObject : scene->m_gameObjects) {
@@ -84,8 +97,15 @@ void SceneManager::saveScenes() {
 }
 
 void SceneManager::saveAllScenes() {
+	std::string path = "src/assets/scenes/";
+    
+    if (!std::filesystem::exists(path)) {
+    	std::cout << "Scenes dir do not found: " << path << std::endl;    	
+		return;
+    }
+    
     for (const auto& scene : m_scenes) {
-        std::fstream file("src/assets/scenes/" + scene->name + ".scn", std::ios::out);
+        std::fstream file(path + scene->name + ".scn", std::ios::out);
         file << "name" << " " << scene->name << std::endl;
 
         for (const auto& gameObject : scene->m_gameObjects) {

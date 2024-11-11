@@ -39,20 +39,23 @@ SceneManager mSceneManager;
 std::mutex myMutex;
 
 void Game::Start() {
-    textures.emplace(ImageType::ICON_FILE,       &Resources::Load<Texture>("src/assets/icon/icons8-file-30.png"));
-    textures.emplace(ImageType::ICON_FOLDER,     &Resources::Load<Texture>("src/assets/icon/icons8-folder-50.png"));
-    textures.emplace(ImageType::ICON_BACK_FILE,  &Resources::Load<Texture>("src/assets/icon/icons8-go-back-50.png"));
-    textures.emplace(ImageType::ICON_GAMEOBJECT, &Resources::Load<Texture>("src/assets/icon/icons8-3d-object-50.png"));
-    textures.emplace(ImageType::ICON_PENCIL,     &Resources::Load<Texture>("src/assets/icon/icons8-lápis-30.png"));
-    textures.emplace(ImageType::ICON_LIGHT,     &Resources::Load<Texture>("src/assets/icon/icons8-lâmpada-globular-64.png"));
-    
+    try {
+		textures.emplace(ImageType::ICON_FILE,       &Resources::Load<Texture>("src/assets/icon/icons8-file-30.png"));
+		textures.emplace(ImageType::ICON_FOLDER,     &Resources::Load<Texture>("src/assets/icon/icons8-folder-50.png"));
+		textures.emplace(ImageType::ICON_BACK_FILE,  &Resources::Load<Texture>("src/assets/icon/icons8-go-back-50.png"));
+		textures.emplace(ImageType::ICON_GAMEOBJECT, &Resources::Load<Texture>("src/assets/icon/icons8-3d-object-50.png"));
+		textures.emplace(ImageType::ICON_PENCIL,     &Resources::Load<Texture>("src/assets/icon/icons8-lápis-30.png"));
+		textures.emplace(ImageType::ICON_LIGHT,     &Resources::Load<Texture>("src/assets/icon/icons8-lâmpada-globular-64.png"));
+    } catch (const std::exception &e) {
+		std::cout << e.what() << std::endl;
+	}
     camera = &Camera::MainCamera();
 
     try {
-        mSceneManager.loadAllScenes();
+         mSceneManager.loadAllScenes();
         if (mSceneManager.m_scenes.empty()) {
-            mSceneManager.createScenes("This_is_your_scene");
-            mSceneManager.saveScenes();
+              mSceneManager.createScenes("This_is_your_scene");
+            // mSceneManager.saveScenes();
         } else {
            // auto& back = mSceneManager.m_scenes.back();
            // GameObject* gameObject = back->add("Sphere");
@@ -140,7 +143,8 @@ void Game::Gui() {
         }
         ImGui::End();
     }
-
+    
+    
     static bool isRenameScene, isRenameGameObject, isgameObjectSelect, canDelete;
     static int sceneID, gameObjectID;
 
@@ -223,7 +227,7 @@ void Game::Gui() {
         }
         ImGui::End();
     }
-
+    
     if (ImGui::Begin("Renderização", nullptr, ImGuiWindowFlags_NoResize)) {
         ImGui::Image(reinterpret_cast<ImTextureID>(mFrameBuffer->postTextureID), ImGui::GetContentRegionAvail(), ImVec2(0, 1), ImVec2(1, 0));
 
@@ -252,12 +256,13 @@ void Game::Gui() {
             }
             ImGui::EndMenuBar();
         }
-
-        static std::filesystem::path currentPath("src/assets");
+        
+        // TODO: FIX ME
+        static std::filesystem::path currentPath("./");
 
         ImGui::Columns(5, "#Collums1", false);
-        if (ImGui::ImageButton(reinterpret_cast<ImTextureID>(textures[ImageType::ICON_BACK_FILE]->textureID), ImVec2(32, 32))) {
-            if (currentPath != std::filesystem::path("src/assets")) {
+        if (textures[ImageType::ICON_BACK_FILE] && ImGui::ImageButton(reinterpret_cast<ImTextureID>(textures[ImageType::ICON_BACK_FILE]->textureID), ImVec2(32, 32))) {
+            if (currentPath != std::filesystem::path("./")) {
                 currentPath = currentPath.parent_path();
             }
         }
@@ -269,24 +274,24 @@ void Game::Gui() {
             ImGui::PushID(++id);
             ImGui::NextColumn();
 
-            if (entry.is_directory()) {
+            if (entry.is_directory() && textures[ImageType::ICON_FOLDER]) {
                 if (ImGui::ImageButton(reinterpret_cast<ImTextureID>(textures[ImageType::ICON_FOLDER]->textureID), ImVec2(32, 32))) {
                     currentPath = entry.path();
                 }
             } else {
                 std::string path = entry.path();
 
-                if (entry.path().extension() == std::filesystem::path(".obj")) {
+                if (entry.path().extension() == std::filesystem::path(".obj") && textures[ImageType::ICON_GAMEOBJECT]) {
                     ImGui::ImageButton(reinterpret_cast<ImTextureID>(textures[ImageType::ICON_GAMEOBJECT]->textureID), ImVec2(32, 32));
                 
-                    if (ImGui::BeginDragDropSource(ImGuiDragDropFlags_SourceAllowNullID)) {
+                    if (ImGui::BeginDragDropSource(ImGuiDragDropFlags_SourceAllowNullID) && textures[ImageType::ICON_GAMEOBJECT]) {
                         ImGui::SetDragDropPayload(FILE_OBJ, path.c_str(), path.size() + 1);
                         ImGui::ImageButton(reinterpret_cast<ImTextureID>(textures[ImageType::ICON_GAMEOBJECT]->textureID), ImVec2(32, 32));
                 
                         ImGui::EndDragDropSource();
                     }
                 } else {
-                    ImGui::ImageButton(reinterpret_cast<ImTextureID>(textures[ImageType::ICON_FILE]->textureID), ImVec2(32, 32));
+                    // ImGui::ImageButton(reinterpret_cast<ImTextureID>(textures[ImageType::ICON_FILE]->textureID), ImVec2(32, 32));
                 }
             }
             ImGui::Text("%s", entry.path().filename().c_str());
@@ -296,7 +301,7 @@ void Game::Gui() {
 
         ImGui::End();
     }
-
+    
     if (ImGui::Begin("Propriedades", nullptr, ImGuiWindowFlags_NoResize)) {
         if (ImGui::CollapsingHeader("Status do jogo")) {
             ImGui::Text("Application average\n%.3f ms/frame (%.1f FPS)", 1000.0f / io.Framerate, io.Framerate);

@@ -11,11 +11,19 @@ Scenes::Scenes() : name("none") {}
 Scenes::Scenes(const std::string& name) : name(name){}
 
 void Scenes::add(const std::string& path) {
-    GameObject& gameObject = Resources::Load<GameObject>(path);
+    GameObject *gameObject = nullptr;
+    
+    try {
+    	gameObject = &Resources::Load<GameObject>(path);
+    } catch (const std::exception &e) {
+    	std::cout << "Scene.add " << e.what() << std::endl;
+    }
+    if (!gameObject)
+	return;
 
-    m_gameObjects.push_back(&gameObject);
+     m_gameObjects.push_back(gameObject);
 
-    gameObject.Instantiate();
+     gameObject->Instantiate();
 }
 
 void Scenes::addAll(const std::string& path) {
